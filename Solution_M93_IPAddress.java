@@ -15,14 +15,11 @@ public class Solution_M93_IPAddress {
                 if (!isGood(s, i, j)) break;
                 
                 for (int k = j + 1; k < j+4; k++ ) {
-                	//System.out.println(i + " " + j + " " + k);
                     if (!isGood(s, j, k)) break;
-                    //System.out.println(i + " " + j + " " + k);
                     if (!isGood(s, k, (s.length()))) continue;
                     
                     String str = s.substring(0, i) + "." + s.substring(i, j) + "." + s.substring(j, k) 
                                     + "." + s.substring(k, s.length());
-                    //System.out.println(i + " " + j + " " + k);
                     ans.add(str);
                 }
             }
@@ -35,13 +32,10 @@ public class Solution_M93_IPAddress {
         if (a > s.length() - 1 || b > s.length()) return false;
         if (a >= b) return false;
         if (b - a > 3) return false;
-        //System.out.println(a + " " + b);
         int n = Integer.parseInt(s.substring(a, b));
-        //System.out.println(a + " " + b);
         if (n > 255) return false;
         if (n < 10 && (b - a) > 1) return false;
         if (n < 100 && (b - a) > 2) return false;
-        //System.out.println(a + " " + b);
         return true;
     }
     

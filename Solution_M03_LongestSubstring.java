@@ -51,7 +51,6 @@ public class Solution_M03_LongestSubstring {
             maxLength = currentLength;
             //first = 0;
             //last = s.length() - 1;
-            //System.out.println("Never R");
         }
         
         //System.out.println(first + " " + last);
