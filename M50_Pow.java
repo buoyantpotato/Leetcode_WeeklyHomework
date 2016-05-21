@@ -1,5 +1,6 @@
 package Weekly_Homework;
 public class M50_Pow {
+	// Recursion method
     public double myPow(double x, int n) {
         if (n == 0) {
             return 1;
@@ -15,5 +16,23 @@ public class M50_Pow {
         else {
             return routeToAns * routeToAns * x;
         }
+    }
+    
+
+    //**From teacher**
+    // Iteration method
+    public double myPowIteration(double x, int n) {
+    	double result = 1;
+        long m = (long) ((n >= 0) ? n : -n);
+        while (m > 0) {
+            if ((m & 1) == 1) {
+                result *= x;
+            }
+            
+            x *= x;
+            m >>= 1;
+        }
+        
+        return n >= 0 ? result : 1 / result; 	
     }
 }
