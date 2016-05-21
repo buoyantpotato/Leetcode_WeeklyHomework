@@ -1,8 +1,11 @@
 package Weekly_Homework;
 
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Arrays;
+
 
 public class M300_LongestSubsequence {
     public int lengthOfLIS(int[] nums) {
@@ -72,5 +75,5 @@ public class M300_LongestSubsequence {
         }
     }
 
-          
+      
 }

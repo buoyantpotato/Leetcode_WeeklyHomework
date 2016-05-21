@@ -4,6 +4,8 @@ public class M69_Sqrt {
     public int mySqrt(int x) {
         
         if (x == 0 || x == 1) return x;
+        if (x == 0) return 0;
+        if (x == 1) return 1;
         int start = 1;
         int end = x / 2;
         
@@ -44,4 +46,5 @@ public class M69_Sqrt {
     	int i = 1;
     	System.out.println(b == i);
     }
+
 }
