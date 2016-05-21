@@ -24,7 +24,7 @@ public class M114_BTtoLinkedList {
             root.right = root.left;
             root.left = null;
             leftLast.right = tempRight;
-            TreeNode rightLast = mostRightInLeft(leftLast);
+            TreeNode rightLast = mostRightInLeft(leftLast); // unused treenode, just for operation in the methode;
         }
         else {
             TreeNode rightLast = mostRightInLeft(root.right);

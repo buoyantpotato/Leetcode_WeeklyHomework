@@ -1,6 +1,8 @@
 package Weekly_Homework;
 
 public class M328_OddEvenLinkedList {
+	
+	// Definition for a list node
     public class ListNode {
     	int val;
     	ListNode next;

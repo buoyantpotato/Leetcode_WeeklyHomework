@@ -1,6 +1,8 @@
 package Weekly_Homework;
 
 public class E160_IntersectionOf2LinkedList {
+	
+	// Definition of List Node
 	public class ListNode {
     	int val;
     	ListNode next;
